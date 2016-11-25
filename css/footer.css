@@ -1,0 +1,74 @@
+@charset "utf-8";
+footer{
+	position: relative;
+	padding: 8px 0 10px 25%;
+    border-top: 1px solid #d9d9d9;
+    overflow: hidden;
+    color: #999999;
+    box-sizing: border-box;
+    font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    z-index: 10;
+}
+footer .footer-l{
+	float: left;
+    margin-left: 65px;
+}
+footer .footer-l img{
+	width: 60px;
+    margin-left: 5px;
+}
+footer .footer-l p{
+	margin: 5px 0 0;
+}
+footer .footer-l p >a{
+	color: #999999;
+}
+footer .footer-l p >a:hover{
+	color: black;
+}
+footer .footer-r{
+	float: right;
+}
+footer .footer-r div{
+	margin-top: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer .footer-r .app-download-btn{
+	margin-right: 3px;
+}
+footer .footer-r a{
+	margin: 0 3px;
+}
+footer .footer-r a:hover{
+	opacity: 0.7;
+}
+footer .footer-r a img{
+	width: 90px;
+}
+footer .footer-r i{
+	color: #999999;
+}
+footer .footer-r i:hover{
+	color:black;
+}
+
+@media only screen and (max-width: 850px) {
+	.list-container .list-article .list-footer {
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 20px;
+		color: #999;
+	}
+	.list-container .list-article .list-footer a {
+		color: #999;
+	}
+	.list-container .list-article .list-footer a:hover,
+	.list-container .list-article .list-footer span:hover {
+		color: #717171;
+	}
+
+}

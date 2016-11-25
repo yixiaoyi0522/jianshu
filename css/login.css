@@ -1,0 +1,378 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+li {
+	list-style: none;
+}
+
+@media only screen and (min-width: 750px) {
+	/*先隐藏注册*/
+	.content2{
+		display: none;
+	}
+	/*隐藏左下角登录*/
+	.ln-bottom .denglu{
+		display: none;
+	}
+	.s-navbar-user{
+		display: none;
+	}
+	.login-page {
+		padding: 125px 0 50px;
+		text-align: center;
+	}
+	.login-page .logo img {
+		width: 252px;
+	}
+	.login-page .title {
+		margin: 70px auto 50px;
+		border-bottom: 1px solid #eeeeee;
+		color: #b1b1b1;
+	}
+	.login-page .title span {
+		position: relative;
+		top: 10px;
+		padding: 0 30px;
+		background: white;
+	}
+	.login-page .title span a {
+		color: #b1b1b1;
+	}
+	.login-page .title span a.active {
+		color: black;
+	}
+	.login-page .title span b {
+		margin: 0 10px;
+		font-weight: bold;
+	}
+	.login-page form {
+		padding-bottom: 15px;
+		margin: 0 auto 25px;
+		border-bottom: 1px solid #eeeeee;
+		width: 300px;
+		display: block;
+	}
+	.login-page form .input {
+		width: 100%;
+		margin-bottom: 15px;
+		display: inline-block;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+	.login-page form .input span {
+		width: 34px;
+		height: 34px;
+		font-size: 12px;
+		line-height: 34px;
+		display: inline-block;
+		border: 1px solid #ccc;
+		text-align: center;
+		text-shadow: 0 1px 0 white;
+		min-width: 16px;
+		padding: 4px 5px;
+		margin-right: -1px;
+		border-radius: 4px 0 0 4px;
+	}
+	.login-page form .input input {
+		position: relative;
+		top: -1px;
+		width: calc(100% - 44px);
+		height: 43.5px;
+		padding: 4px 12px;
+		box-sizing: border-box;
+		display: inline-block;
+		margin-left: -8px;
+		border: 1px solid #ccc;
+		border-radius: 0 4px 4px 0;
+		/*box-shadow: none;*/
+	}
+	.login-page form button {
+		width: 100%;
+		background: #049cdb;
+		color: white;
+		border-color: #15a7f0;
+		padding: 14px 18px;
+		font-size: 18px;
+		cursor: pointer;
+		border-radius: 2px;
+		border: 1px solid transparent;
+	}
+	.login-page .content2 form button{
+		border-color: #49be38;
+    	background: #49be38;
+	}
+	.login-page form .form-text {
+		width: 100%;
+		margin: 15px 0 0;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 1.5;
+		text-align: left;
+	}
+	/*.login-page form .form-text input{
+	background: #FFF;
+	
+}*/
+	/*去掉复选框样式*/
+	/*input[type="checkbox"] {
+  -webkit-appearance: none;
+}*/
+	.login-page form .form-text a {
+		float: right;
+	}
+	.login-page form .other a {
+		color: #15a7f0;
+	}
+	.login-page form .other a:hover {
+		color: #3dbcf5;
+	}
+	.login-sns p {
+		margin-bottom: 15px;
+		color: #999;
+		font-size: 14px;
+	}
+	.login-sns .login-list li {
+		display: inline-block;
+	}
+	.login-sns .login-list li>a {
+		width: 44px;
+		height: 44px;
+		display: inline-block;
+		border-radius: 50%;
+		line-height: 44px;
+		font-size: 20px;
+		background: #eeeeee;
+	}
+	.login-sns .login-list li>a i {
+		font-size: 18px;
+	}
+	.login-sns .login-list .weibo a:hover{
+		background: #f57e42;
+		color: white;
+	}
+	.login-sns .login-list .weixin a:hover{
+		background: #15a7f0;
+		color: white;
+	}
+	.login-sns .login-list .dou a:hover{
+		background: #49be38;
+		color: white;
+	}
+	.login-sns .login-list .google a:hover{
+		background: #e03d37;
+		color: white;
+	}
+	.login-sns .login-list .tui a:hover{
+		background: #49be38;
+		color: white;
+	}
+	
+	
+	/*注册*/
+	.sign_up_msg{
+		margin: 10px 0px;
+	    padding: 0px;
+	    text-align: left;
+	    font-size: 12px;
+	    line-height: 20px;
+	    color: #9d9d9d;
+	}
+	.sign_up_msg a{
+		font-weight: bold;
+	}
+
+}
+
+@media only screen  and (max-width: 750px) {
+		/*先隐藏注册*/
+	.content2{
+		display: none;
+	}
+	/*隐藏左下角登录*/
+	.ln-bottom .denglu{
+		display: none;
+	}
+
+
+	.s-navbar-user{
+		display: block;
+	}	
+	.left-navbar{
+		display: none;
+	}
+	.navbar-user{
+		display: none;
+	}
+	.login-page {
+		padding: 125px 0 50px;
+		text-align: center;
+	}
+	.login-page .logo img {
+		width: 252px;
+	}
+	.login-page .title {
+		margin: 70px auto 50px;
+		border-bottom: 1px solid #eeeeee;
+		color: #b1b1b1;
+	}
+	.login-page .title span {
+		position: relative;
+		top: 10px;
+		padding: 0 30px;
+		background: white;
+	}
+	.login-page .title span a {
+		color: #b1b1b1;
+	}
+	.login-page .title span a.active {
+		color: black;
+	}
+	.login-page .title span b {
+		margin: 0 10px;
+		font-weight: bold;
+	}
+	.login-page form {
+		padding-bottom: 15px;
+		margin: 0 auto 25px;
+		border-bottom: 1px solid #eeeeee;
+		width: 300px;
+		display: block;
+	}
+	.login-page form .input {
+		width: 100%;
+		margin-bottom: 15px;
+		display: inline-block;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+	.login-page form .input span {
+		width: 34px;
+		height: 34px;
+		font-size: 12px;
+		line-height: 34px;
+		display: inline-block;
+		border: 1px solid #ccc;
+		text-align: center;
+		text-shadow: 0 1px 0 white;
+		min-width: 16px;
+		padding: 4px 5px;
+		margin-right: -1px;
+		border-radius: 4px 0 0 4px;
+	}
+	.login-page form .input input {
+		position: relative;
+		top: -1px;
+		width: calc(100% - 44px);
+		height: 44px;
+		padding: 4px 12px;
+		box-sizing: border-box;
+		display: inline-block;
+		margin-left: -8px;
+		border: 1px solid #ccc;
+		border-radius: 0 4px 4px 0;
+		/*box-shadow: none;*/
+	}
+	.login-page form button {
+		width: 100%;
+		background: #049cdb;
+		color: white;
+		border-color: #15a7f0;
+		padding: 14px 18px;
+		font-size: 18px;
+		cursor: pointer;
+		border-radius: 2px;
+		border: 1px solid transparent;
+	}
+	.login-page .content2 form button{
+		border-color: #49be38;
+    	background: #49be38;
+	}
+
+	.login-page form .form-text {
+		width: 100%;
+		margin: 15px 0 0;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 1.5;
+		text-align: left;
+	}
+
+	.login-page form .form-text a {
+		float: right;
+	}
+	.login-page form .other a {
+		color: #15a7f0;
+	}
+	.login-page form .other a:hover {
+		color: #3dbcf5;
+	}
+	.login-sns p {
+		margin-bottom: 15px;
+		color: #999;
+		font-size: 14px;
+	}
+	.login-sns .login-list li {
+		display: inline-block;
+	}
+	.login-sns .login-list li>a {
+		width: 44px;
+		height: 44px;
+		display: inline-block;
+		border-radius: 50%;
+		line-height: 44px;
+		font-size: 20px;
+		background: #eeeeee;
+	}
+	.login-sns .login-list li>a i {
+		font-size: 18px;
+	}
+	.login-sns .login-list li.weibo a:hover{
+		background: #f57e42;
+		color: white;
+	}
+	.login-sns .login-list li.weixin a:hover{
+		background: #15a7f0;
+		color: white;
+	}
+	.login-sns .login-list li.dou a:hover{
+		background: #49be38;
+		color: white;
+	}
+	.login-sns .login-list li.google a:hover{
+		background: #e03d37;
+		color: white;
+	}
+	.login-sns .login-list li.tui a:hover{
+		background: #49be38;
+		color: white;
+	}
+	/*注册*/
+	.sign_up_msg{
+		margin: 10px 0px;
+	    padding: 0px;
+	    text-align: left;
+	    font-size: 12px;
+	    line-height: 20px;
+	    color: #9d9d9d;
+	}
+	.sign_up_msg a{
+		font-weight: bold;
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+@charset "utf-8";
+.left-navbar{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 45px;
+	height: 100%;
+	background: #2a2a2a;
+	z-index: 999;
+}
+.left-navbar .ln-top .active{
+	background: #e78170;
+	color: white;
+    text-shadow: 0 1px 0 #de533a;
+}
+.left-navbar .ln-top >a{
+	display: block;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+.left-navbar .ln-top >a .zt{
+	position: absolute;
+	display: block;
+    top: 51px;
+    left: 45px;
+    height: 0;
+    z-index: 999;
+    
+}
+.left-navbar .ln-top >a .zt .zhuanti{
+	position: relative;
+    white-space: nowrap;
+    max-width: none;
+	display: none;
+	left: 5px;
+	padding: 8px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 999;
+	
+}
+.left-navbar .ln-top >a .zt .sanjiao{
+	display: none;
+	position: relative;
+	top: 20px;
+    left: 0;
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid black;
+    border-bottom: 5px solid transparent;
+    opacity: 0.7;
+    width: 0;
+    height: 0;
+    z-index: 999;
+}
+.left-navbar .ln-top >a:hover{
+	background: #e78170;
+	color: white;
+}
+.left-navbar .ln-top >a:hover .zhuanti{
+	display: block; 
+	z-index: 999;
+}
+.left-navbar .ln-top >a:hover .sanjiao{
+	display: block;
+	z-index: 999;
+}
+.left-navbar a:hover i{
+	color: #fff;
+}
+
+
+	/*简图片*/
+.left-navbar .ln-top >a .jian{
+	position: absolute;
+	left: 45px;
+	top:30px;
+	
+	z-index: 1999;
+	display: none;
+	
+}
+.left-navbar .ln-top >a .jian .sanjiao{
+	position: absolute;
+    top: 70px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid white;
+    border-bottom: 10px solid transparent;
+    z-index: 999;
+}
+.left-navbar .ln-top >a .jian .jian-h{
+	width: 260px;
+    height: 460px;
+    background: white;
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #9d9d9d;
+    z-index: 999;
+}
+.left-navbar .ln-top >a .jian .jian-p{
+	max-width: 96px;
+    max-height: 96px;
+    margin: 55px 0 24px 0;
+    padding: 3px;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    z-index: 999;
+}
+.left-navbar .ln-top >a .jian .jian-er{
+	width: 140px;
+    height: 140px;
+    z-index: 999;
+}
+.left-navbar .ln-top >a .jian .jian-h p{
+	color: #000000;
+	font-size: 14px;
+	z-index: 999;
+}
+.left-navbar .ln-top >a .jian .jian-h p.title{
+	font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    z-index: 999;
+}
+.left-navbar .ln-top >a:hover .jian{
+	display: block;
+	z-index: 999;
+}
+.jian-dow b{
+	display: inline-block;
+    color: #3dbcf5;
+    text-shadow: none;
+    z-index: 999;
+}
+
+
+
+	/*下边*/
+.left-navbar .ln-bottom{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.left-navbar .ln-bottom >a{
+	position: relative;
+    padding: 5px 10px;
+    color: silver;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.left-navbar .ln-bottom >a:hover{
+	color:#eee
+}
+.left-navbar i{
+	color: #999999;
+}

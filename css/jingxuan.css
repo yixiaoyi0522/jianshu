@@ -1,0 +1,836 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+
+/*显示左下角登陆部分*/
+
+.left-navbar .ln-bottom .denglu {
+	display: block;
+}
+
+.left-navbar .ln-bottom .denglu a {
+	position: relative;
+	padding: 5px 10px;
+	color: silver;
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+}
+
+
+/*2015精选页内容*/
+.main{
+	display: block;
+	margin-left: 45px;
+}
+.main .box {
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	min-width: 670px;
+	padding-bottom: 30px;
+	background-color: #f3f3f3;
+	font-family: 'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+	/*color: #ce452f;*/
+}
+
+.main .box .swiper-container {
+	position: relative;
+	display: block;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+/*标题部分*/
+
+.swiper-container .title-container {
+	margin-bottom: 30px;
+	font-size: 36px;
+	line-height: 36px;
+	color: #e9816d;
+}
+
+.swiper-container .title-container .line {
+	position: relative;
+	top: -12px;
+	display: inline-block;
+	height: 2px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #d5d5d5;
+	width: 50px;
+	margin: 0 20px 0 20px;
+}
+
+.swiper-container .title-container .title {
+	color: #2f2f2f;
+}
+
+
+/*分享部分*/
+
+.swiper-container .share-container {
+	margin-bottom: 50px;
+}
+
+
+/*三角*/
+
+.swiper-container .share-container .more i {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #555;
+}
+
+.swiper-container .share-container .item {
+	color: #555;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.swiper-container .share-container .item i {
+	font-size: 24px;
+}
+
+@media only screen and (min-width: 960px) {
+	/*12个月部分*/
+	.swiper-wrapper .swiper-slide {
+		position: relative;
+	    display: inline-block;
+	    width: 33%;
+	    height: 660px;
+	    max-height: 660px;
+	    margin-left: -2px;
+	    margin-right: -2px;
+	    margin-bottom: 30px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    box-sizing: border-box;
+	    text-align: center;
+	    font-size: 18px;
+	    transition: 0.2s ease all;
+	}
+	.swiper-wrapper .swiper-slide > .pan{
+		min-width: 300px;
+	    max-width: 342px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    box-sizing: border-box;
+	    background-color: white;
+	    box-shadow: 5px 5px 10px #d5d5d5;
+	    cursor: pointer;
+	    transition: all 200ms ease;
+	    position: relative;
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	.page1 > .pan{
+		background: url(../img/january.jpg);
+	}
+	.page2 > .pan{
+		background: url(../img/february.jpg);
+	}
+	.page3 > .pan{
+		background: url(../img/march.jpg);
+	}
+	.page4 > .pan{
+		background: url(../img/april.jpg);
+	}
+	.page5 > .pan{
+		background: url(../img/may.jpg);
+	}
+	.page6 > .pan{
+		background: url(../img/june.jpg);
+	}
+	.page7 > .pan{
+		background: url(../img/july.jpg);
+	}
+	.page8 > .pan{
+		background: url(../img/august.jpg);
+	}
+	.page9 > .pan{
+		background: url(../img/september.jpg);
+	}
+	.page10 > .pan{
+		background: url(../img/october.jpg);
+	}
+	.page11 > .pan{
+		background: url(../img/november.jpg);
+	}
+	.page12 > .pan{
+		background: url(../img/december.jpg);
+	}
+	.swiper-slide>.pan .article{
+		position: absolute;
+	    display: block;
+	    top: 50%;
+	    left: 0px;
+	    width: 100%;
+	    margin-top: -40px;
+	}
+	.swiper-slide>.pan .article .article-title{
+		display: block;
+	    width: 100%;
+	    height: 25px;
+	    margin-bottom: 15px;
+	    font-size: 14px;
+	    font-weight: bold;
+	    line-height: 25px;
+	    text-align: center;
+	    color: #2f2f2f;
+	}
+	.swiper-slide>.pan .article .line{
+		position: relative;
+	    display: inline-block;
+	    height: 2px;
+	    padding: 0px;
+	    overflow: hidden;
+	    background-color: #d5d5d5;
+	    width: 38px;
+	    margin-bottom: 15px;
+	}
+	.swiper-slide>.pan .article .content{
+		margin-bottom: 15px;
+    	font-size: 12px;
+    	line-height: 1.6;
+    	color: #2f2f2f;
+	}
+
+	.swiper-slide>.pan .author{
+		position: absolute;
+	    display: block;
+	    bottom: 50px;
+	    left: 0px;
+	    width: 100%;
+	    height: 35px;
+	    line-height: 35px;
+	    vertical-align: middle;
+	}
+	.swiper-slide>.pan .author .icon{
+		width: 35px;
+	    height: 35px;
+	    border-radius: 50%;
+	    max-width: 100%;
+	    vertical-align: middle;
+	    border: 0;
+	}
+	.swiper-slide>.pan .author .name{
+		margin-left: 15px;
+	    font-size: 15px;
+	    color: #717171;
+	}
+	
+	
+	.swiper-slide>.pan .mask{
+		position: absolute;
+	    display: block;
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(255,255,255,0.8);
+	    opacity: 0;
+	    cursor: pointer;
+	    transition: opacity 200ms ease-in;
+	}
+	.swiper-slide>.pan .mask .btn{
+		position: absolute;
+	    display: block;
+	    box-sizing: border-box;
+	    top: 50%;
+	    left: 50%;
+	    width: 106px;
+	    height: 44px;
+	    margin-left: -53px;
+	    margin-top: -22px;
+	    padding: 0px;
+	    background-color: #e9816d;
+	    border-color: transparent;
+	    box-shadow: inset 0px 0px 1px #f8d9d4;
+	    font-size: 14px;
+	    line-height: 44px;
+	    color: white;
+	    text-align: center;
+    	vertical-align: middle;
+    	cursor: pointer;
+    	border-radius: 4px;
+    	text-shadow: none;
+	}
+	
+	.swiper-wrapper .swiper-slide > .pan:hover .mask{
+		opacity: 1;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+@media only screen and (min-width: 752px) and (max-width: 960px) {
+		/*12个月部分*/
+	.swiper-wrapper .swiper-slide {
+		position: relative;
+	    display: inline-block;
+	    width: 50%;
+	    height: 660px;
+	    max-height: 660px;
+	    margin-left: -2px;
+	    margin-right: -2px;
+	    margin-bottom: 30px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    box-sizing: border-box;
+	    text-align: center;
+	    font-size: 18px;
+	    transition: 0.2s ease all;
+	}
+	.swiper-wrapper .swiper-slide > .pan{
+		min-width: 300px;
+	    max-width: 342px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    box-sizing: border-box;
+	    background-color: white;
+	    box-shadow: 5px 5px 10px #d5d5d5;
+	    cursor: pointer;
+	    transition: all 200ms ease;
+	    position: relative;
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	.page1 > .pan{
+		background: url(../img/january.jpg);
+	}
+	.page2 > .pan{
+		background: url(../img/february.jpg);
+	}
+	.page3 > .pan{
+		background: url(../img/march.jpg);
+	}
+	.page4 > .pan{
+		background: url(../img/april.jpg);
+	}
+	.page5 > .pan{
+		background: url(../img/may.jpg);
+	}
+	.page6 > .pan{
+		background: url(../img/june.jpg);
+	}
+	.page7 > .pan{
+		background: url(../img/july.jpg);
+	}
+	.page8 > .pan{
+		background: url(../img/august.jpg);
+	}
+	.page9 > .pan{
+		background: url(../img/september.jpg);
+	}
+	.page10 > .pan{
+		background: url(../img/october.jpg);
+	}
+	.page11 > .pan{
+		background: url(../img/november.jpg);
+	}
+	.page12 > .pan{
+		background: url(../img/december.jpg);
+	}
+	.swiper-slide>.pan .article{
+		position: absolute;
+	    display: block;
+	    top: 50%;
+	    left: 0px;
+	    width: 100%;
+	    margin-top: -40px;
+	}
+	.swiper-slide>.pan .article .article-title{
+		display: block;
+	    width: 100%;
+	    height: 25px;
+	    margin-bottom: 15px;
+	    font-size: 14px;
+	    font-weight: bold;
+	    line-height: 25px;
+	    text-align: center;
+	    color: #2f2f2f;
+	}
+	.swiper-slide>.pan .article .line{
+		position: relative;
+	    display: inline-block;
+	    height: 2px;
+	    padding: 0px;
+	    overflow: hidden;
+	    background-color: #d5d5d5;
+	    width: 38px;
+	    margin-bottom: 15px;
+	}
+	.swiper-slide>.pan .article .content{
+		margin-bottom: 15px;
+    	font-size: 12px;
+    	line-height: 1.6;
+    	color: #2f2f2f;
+	}
+
+	.swiper-slide>.pan .author{
+		position: absolute;
+	    display: block;
+	    bottom: 50px;
+	    left: 0px;
+	    width: 100%;
+	    height: 35px;
+	    line-height: 35px;
+	    vertical-align: middle;
+	}
+	.swiper-slide>.pan .author .icon{
+		width: 35px;
+	    height: 35px;
+	    border-radius: 50%;
+	    max-width: 100%;
+	    vertical-align: middle;
+	    border: 0;
+	}
+	.swiper-slide>.pan .author .name{
+		margin-left: 15px;
+	    font-size: 15px;
+	    color: #717171;
+	}
+	
+	
+	.swiper-slide>.pan .mask{
+		position: absolute;
+	    display: block;
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(255,255,255,0.8);
+	    opacity: 0;
+	    cursor: pointer;
+	    transition: opacity 200ms ease-in;
+	}
+	.swiper-slide>.pan .mask .btn{
+		position: absolute;
+	    display: block;
+	    box-sizing: border-box;
+	    top: 50%;
+	    left: 50%;
+	    width: 106px;
+	    height: 44px;
+	    margin-left: -53px;
+	    margin-top: -22px;
+	    padding: 0px;
+	    background-color: #e9816d;
+	    border-color: transparent;
+	    box-shadow: inset 0px 0px 1px #f8d9d4;
+	    font-size: 14px;
+	    line-height: 44px;
+	    color: white;
+	    text-align: center;
+    	vertical-align: middle;
+    	cursor: pointer;
+    	border-radius: 4px;
+    	text-shadow: none;
+	}
+	
+	.swiper-wrapper .swiper-slide > .pan:hover .mask{
+		opacity: 1;
+	}
+
+}
+@media only screen and (min-width: 620px) and (max-width: 752px) {
+	.main{
+	display: block;
+	margin-left: 0;
+}
+		/*12个月部分*/
+	.swiper-wrapper .swiper-slide {
+		position: relative;
+	    display: inline-block;
+	    width: 50%;
+	    height: 660px;
+	    max-height: 660px;
+	    margin-left: -2px;
+	    margin-right: -2px;
+	    margin-bottom: 30px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    box-sizing: border-box;
+	    text-align: center;
+	    font-size: 18px;
+	    transition: 0.2s ease all;
+	}
+	.swiper-wrapper .swiper-slide > .pan{
+		min-width: 300px;
+	    max-width: 342px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    box-sizing: border-box;
+	    background-color: white;
+	    box-shadow: 5px 5px 10px #d5d5d5;
+	    cursor: pointer;
+	    transition: all 200ms ease;
+	    position: relative;
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	.page1 > .pan{
+		background: url(../img/january.jpg);
+	}
+	.page2 > .pan{
+		background: url(../img/february.jpg);
+	}
+	.page3 > .pan{
+		background: url(../img/march.jpg);
+	}
+	.page4 > .pan{
+		background: url(../img/april.jpg);
+	}
+	.page5 > .pan{
+		background: url(../img/may.jpg);
+	}
+	.page6 > .pan{
+		background: url(../img/june.jpg);
+	}
+	.page7 > .pan{
+		background: url(../img/july.jpg);
+	}
+	.page8 > .pan{
+		background: url(../img/august.jpg);
+	}
+	.page9 > .pan{
+		background: url(../img/september.jpg);
+	}
+	.page10 > .pan{
+		background: url(../img/october.jpg);
+	}
+	.page11 > .pan{
+		background: url(../img/november.jpg);
+	}
+	.page12 > .pan{
+		background: url(../img/december.jpg);
+	}
+	.swiper-slide>.pan .article{
+		position: absolute;
+	    display: block;
+	    top: 50%;
+	    left: 0px;
+	    width: 100%;
+	    margin-top: -40px;
+	}
+	.swiper-slide>.pan .article .article-title{
+		display: block;
+	    width: 100%;
+	    height: 25px;
+	    margin-bottom: 15px;
+	    font-size: 14px;
+	    font-weight: bold;
+	    line-height: 25px;
+	    text-align: center;
+	    color: #2f2f2f;
+	}
+	.swiper-slide>.pan .article .line{
+		position: relative;
+	    display: inline-block;
+	    height: 2px;
+	    padding: 0px;
+	    overflow: hidden;
+	    background-color: #d5d5d5;
+	    width: 38px;
+	    margin-bottom: 15px;
+	}
+	.swiper-slide>.pan .article .content{
+		margin-bottom: 15px;
+    	font-size: 12px;
+    	line-height: 1.6;
+    	color: #2f2f2f;
+	}
+
+	.swiper-slide>.pan .author{
+		position: absolute;
+	    display: block;
+	    bottom: 50px;
+	    left: 0px;
+	    width: 100%;
+	    height: 35px;
+	    line-height: 35px;
+	    vertical-align: middle;
+	}
+	.swiper-slide>.pan .author .icon{
+		width: 35px;
+	    height: 35px;
+	    border-radius: 50%;
+	    max-width: 100%;
+	    vertical-align: middle;
+	    border: 0;
+	}
+	.swiper-slide>.pan .author .name{
+		margin-left: 15px;
+	    font-size: 15px;
+	    color: #717171;
+	}
+	
+	
+	.swiper-slide>.pan .mask{
+		position: absolute;
+	    display: block;
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(255,255,255,0.8);
+	    opacity: 0;
+	    cursor: pointer;
+	    transition: opacity 200ms ease-in;
+	}
+	.swiper-slide>.pan .mask .btn{
+		position: absolute;
+	    display: block;
+	    box-sizing: border-box;
+	    top: 50%;
+	    left: 50%;
+	    width: 106px;
+	    height: 44px;
+	    margin-left: -53px;
+	    margin-top: -22px;
+	    padding: 0px;
+	    background-color: #e9816d;
+	    border-color: transparent;
+	    box-shadow: inset 0px 0px 1px #f8d9d4;
+	    font-size: 14px;
+	    line-height: 44px;
+	    color: white;
+	    text-align: center;
+    	vertical-align: middle;
+    	cursor: pointer;
+    	border-radius: 4px;
+    	text-shadow: none;
+	}
+	
+	.swiper-wrapper .swiper-slide > .pan:hover .mask{
+		opacity: 1;
+	}
+
+}
+@media only screen  and (max-width: 620px) {
+	.main{
+	display: block;
+	margin-left: 0;
+}
+		/*12个月部分*/
+	.swiper-wrapper .swiper-slide {
+		position: relative;
+	    display: inline-block;
+	    width: 100%;
+	    height: 660px;
+	    max-height: 660px;
+	    margin-left: -2px;
+	    margin-right: -2px;
+	    margin-bottom: 30px;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    box-sizing: border-box;
+	    text-align: center;
+	    font-size: 18px;
+	    transition: 0.2s ease all;
+	}
+	.swiper-wrapper .swiper-slide > .pan{
+		min-width: 300px;
+	    max-width: 342px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    box-sizing: border-box;
+	    background-color: white;
+	    box-shadow: 5px 5px 10px #d5d5d5;
+	    cursor: pointer;
+	    transition: all 200ms ease;
+	    position: relative;
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+	.page1 > .pan{
+		background: url(../img/january.jpg);
+	}
+	.page2 > .pan{
+		background: url(../img/february.jpg);
+	}
+	.page3 > .pan{
+		background: url(../img/march.jpg);
+	}
+	.page4 > .pan{
+		background: url(../img/april.jpg);
+	}
+	.page5 > .pan{
+		background: url(../img/may.jpg);
+	}
+	.page6 > .pan{
+		background: url(../img/june.jpg);
+	}
+	.page7 > .pan{
+		background: url(../img/july.jpg);
+	}
+	.page8 > .pan{
+		background: url(../img/august.jpg);
+	}
+	.page9 > .pan{
+		background: url(../img/september.jpg);
+	}
+	.page10 > .pan{
+		background: url(../img/october.jpg);
+	}
+	.page11 > .pan{
+		background: url(../img/november.jpg);
+	}
+	.page12 > .pan{
+		background: url(../img/december.jpg);
+	}
+	.swiper-slide>.pan .article{
+		position: absolute;
+	    display: block;
+	    top: 50%;
+	    left: 0px;
+	    width: 100%;
+	    margin-top: -40px;
+	}
+	.swiper-slide>.pan .article .article-title{
+		display: block;
+	    width: 100%;
+	    height: 25px;
+	    margin-bottom: 15px;
+	    font-size: 14px;
+	    font-weight: bold;
+	    line-height: 25px;
+	    text-align: center;
+	    color: #2f2f2f;
+	}
+	.swiper-slide>.pan .article .line{
+		position: relative;
+	    display: inline-block;
+	    height: 2px;
+	    padding: 0px;
+	    overflow: hidden;
+	    background-color: #d5d5d5;
+	    width: 38px;
+	    margin-bottom: 15px;
+	}
+	.swiper-slide>.pan .article .content{
+		margin-bottom: 15px;
+    	font-size: 12px;
+    	line-height: 1.6;
+    	color: #2f2f2f;
+	}
+
+	.swiper-slide>.pan .author{
+		position: absolute;
+	    display: block;
+	    bottom: 50px;
+	    left: 0px;
+	    width: 100%;
+	    height: 35px;
+	    line-height: 35px;
+	    vertical-align: middle;
+	}
+	.swiper-slide>.pan .author .icon{
+		width: 35px;
+	    height: 35px;
+	    border-radius: 50%;
+	    max-width: 100%;
+	    vertical-align: middle;
+	    border: 0;
+	}
+	.swiper-slide>.pan .author .name{
+		margin-left: 15px;
+	    font-size: 15px;
+	    color: #717171;
+	}
+	
+	
+	.swiper-slide>.pan .mask{
+		position: absolute;
+	    display: block;
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(255,255,255,0.8);
+	    opacity: 0;
+	    cursor: pointer;
+	    transition: opacity 200ms ease-in;
+	}
+	.swiper-slide>.pan .mask .btn{
+		position: absolute;
+	    display: block;
+	    box-sizing: border-box;
+	    top: 50%;
+	    left: 50%;
+	    width: 106px;
+	    height: 44px;
+	    margin-left: -53px;
+	    margin-top: -22px;
+	    padding: 0px;
+	    background-color: #e9816d;
+	    border-color: transparent;
+	    box-shadow: inset 0px 0px 1px #f8d9d4;
+	    font-size: 14px;
+	    line-height: 44px;
+	    color: white;
+	    text-align: center;
+    	vertical-align: middle;
+    	cursor: pointer;
+    	border-radius: 4px;
+    	text-shadow: none;
+	}
+	
+	.swiper-wrapper .swiper-slide > .pan:hover .mask{
+		opacity: 1;
+	}
+
+}

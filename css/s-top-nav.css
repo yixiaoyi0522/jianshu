@@ -1,0 +1,103 @@
+	/*头部部分*/
+	.s-navbar-user {
+		clear: both;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 45px;
+		background: white;
+		opacity: 1;
+		box-shadow: 0 1px 4px #eeeeee;
+		/*overflow: hidden;*/
+		z-index: 999;
+	}
+	.s-navbar-user .s-left {
+		background: white;
+		height: 100%;
+		float: left;
+		z-index: 0;
+	}
+	.s-navbar-user .s-left .s-jian {
+		background: #e78170;
+		width: 25px;
+		display: block;
+		padding: 10px;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		color: #fff;
+		z-index: 9999;
+		font-weight: bold;
+	}
+	.s-right {
+		position: relative;
+		top: -45px;
+		overflow: auto;
+		clear: both;
+		z-index: -2;
+	}
+	.s-right a {
+		float: right;
+	}
+	.s-right .s-appDownload {
+		position: relative;
+		margin-top: 6px;
+		float: right;
+		padding: 7px 10px;
+		margin-right: 8px;
+		color: white;
+		background-color: #e78170;
+		border-radius: 4px;
+		font-size: 14px;
+	}
+	.s-right .login {
+		position: relative;
+		top: 16px;
+		float: right;
+		padding: 0 2px;
+		margin-right: 8px;
+		font-size: 14px;
+		line-height: 20px;
+		color: #555555;
+		z-index: -1;
+	}
+	.s-right .login .icon-yue{
+		font-size: 12px;
+		position: relative;
+		top: -2px;
+	}
+	.s-right .login:hover {
+		color: black;
+	}
+	.s-navbar-user .s-jian-list {
+		display: none;
+		position: absolute;
+		top: 45px;
+		left: 0;
+		padding: 0;
+		border: none;
+		box-shadow: none;
+		z-index: 1000;
+	}
+	.s-navbar-user .s-jian-list li{
+		display: block;
+		background: #e78170;
+	}
+	.s-navbar-user .s-jian-list li a{
+		display: block;
+		padding: 13px 75px 13px 15px;
+    	color: white;
+    	text-align: left;
+	}
+	.s-navbar-user .s-jian-list li a:hover{
+		background: #e36e5a;
+		text-shadow: 0 1px 0 #b9351f;
+	}
+	.s-navbar-user .s-jian-list li a i{
+		width: 16px;
+	    display: inline-block;
+	    text-align: center;
+	    line-height: 14px;
+	    margin-right: 17px;
+	}

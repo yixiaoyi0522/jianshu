@@ -1,0 +1,27 @@
+<li id="angular-list" ng-controller="jsCtrl" class="have-img" ng-repeat="data in datas2" on-finish-render-filters>
+		<a class="wrap-img" href="javascript:void(0)">
+		<!--<img src="http://app.chinanurse.cn/data/upload/{{data.thumb[0].url}}" />-->
+	</a>
+	<div>
+		<p class="list-top">
+			<a target="_blank" href="javascript:void(0)">{{data.object_id}} </a>
+			<em>·</em>
+			<span class="time">{{data.post_date}}</span>
+		</p>
+		<h4 class="title">
+							<a target="_blank" href="javascript:void(0)">
+								{{data.post_title}}
+							</a>
+						</h4>
+		<div class="list-footer">
+			<a target="_blank" href="javascript:void(0)">
+				阅读 {{post_hits}}
+			</a>
+			<a target="_blank" href="javascript:void(0)">
+				· 评论 {{recommended}}
+			</a> <span> · 喜欢 {{post_like}}</span>
+
+		</div>
+	</div>
+
+</li>

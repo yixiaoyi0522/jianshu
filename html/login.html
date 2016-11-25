@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html ng-app="jianshu">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>首页</title>
+		<link rel="icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/login.css" />
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body ng-controller="left-navbar">
+		<!--通过ng-include引入左侧导航栏-->
+		<div ng-include="url"></div>
+		<!--通过ng-include引入右侧登录栏-->
+		<div ng-include="url1"></div>
+		<!--通过ng-include引入小屏头部登录-->
+		<div ng-include="url2"></div>
+
+		<!--登录页中间部分-->
+		<div class="login-page">
+			<!--图片logo-->
+			<div class="logo">
+				<img src="../img/img_logo-25ff4bee2e56411470b83c636a7a0dad.png" />
+			</div>
+			<!--标题-->
+			<h4 class="title">
+				<span>
+					<a id="dl" class="active" href="javascript:void(0)">登录</a>
+					<b>·</b>
+					<a id="zc" href="javascript:void(0)">注册</a>
+				</span>
+			</h4>
+			<!--表单-->
+			<div class="content content-dl">
+				<div class="sign">
+					<form action="../index.html" method="get">
+						<div class="input userID">
+							<span>
+								<i class="iconfont">&#xe70e;</i>
+							</span>
+							<input type="text" placeholder="手机号码/电子邮件"/>
+						</div>
+						<div class="input password">
+							<span>
+								<i class="iconfont">&#xf000b;</i>
+							</span>
+							<input type="text" placeholder="密码" />
+						</div>
+
+						<button class="loginButton" type="submit">
+							<span class="button-s">登录</span>
+						</button>
+						<div class="form-text">
+							<input type="checkbox" checked="checked" />记住我
+							<a href="javascript:void(0)">忘记密码</a>
+						</div>
+						<div class="other">
+							<a href="javascript:void(0)">海外手机登录</a>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="content content2 content-zc">
+				<form action="../index.html" method="get">
+					<div class="input userID">
+						<span>
+							<i class="iconfont">&#xe65b;</i>
+						</span>
+						<input type="text" placeholder="你的邮箱地址" />
+					</div>
+					<div class="input userID">
+						<span>
+							<i class="iconfont">&#xe70e;</i>
+						</span>
+						<input type="text" placeholder="选一个昵称" />
+					</div>
+					<div class="input password">
+						<span>
+							<i class="iconfont">&#xf000b;</i>
+						</span>
+						<input type="text" placeholder="输入密码" />
+					</div>
+
+					<button class="loginButton" type="submit">
+						<span class="button-s">注册</span>
+					</button>
+
+					<p class="sign_up_msg">
+						点击 “注册” 或下方社交登录按钮，即表示您同意并愿意遵守简书
+						<a href="http://www.jianshu.com/p/c44d171298ce">用户协议</a> 和
+						<a href="http://www.jianshu.com/p/2ov8x3">隐私政策</a> 
+						。
+					</p>
+
+				</form>
+			</div>
+
+			<div class="login-sns">
+				<p>您还可以通过以下方式直接登录</p>
+				<ul class="login-list">
+					<li class="weibo">
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#xe661;</i>
+						</a>
+					</li>
+					<li class="weixin">
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#x3488;</i>
+						</a>
+					</li>
+					<li class="dou">
+						<a href="javascript:void(0)">
+							<i class="iconfont">豆</i>
+						</a>
+					</li>
+					<li class="google">
+						<a href="javascript:void(0)">
+							<i class="iconfont">g</i>
+						</a>
+					</li>
+					<li class="tui">
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#xe609;</i>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,28 @@
+@charset "utf-8";
+	/*右侧登录注册导航*/
+	.navbar-user {
+		position: fixed;
+		top: 10px;
+		right: 0;
+		margin-bottom: 0;
+		z-index: 1010;
+	}
+	.login {
+		position: relative;
+		top: 7px;
+		float: right;
+		padding: 0 2px;
+		margin-right: 8px;
+		font-size: 14px;
+		line-height: 20px;
+		color: #555555;
+	}
+	.login .icon-register{
+		font-size: 12px;
+	}
+	.login:hover {
+		color: black;
+	}
+	
+	
+
